@@ -96,7 +96,9 @@
                   <hr>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="#" button type="button" class="btn btn-sm btn-outline-secondary">Details</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop_PTF">
+                        Details
+                      </button>
                     </div>
                     <small class="text-muted">January, 2021</small>
                   </div>
@@ -116,7 +118,9 @@
                   <hr>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a href="#" button type="button" class="btn btn-sm btn-outline-secondary">Details</a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop_AUG">
+                        Details
+                      </button>
                     </div>
                     
                     <small class="text-muted">July, 2020</small>
@@ -131,11 +135,56 @@
     
     </main>
 
-    <hr class="featurette-divider">
+    <!-- Modal Portfolio -->
+    <div class="modal fade" id="staticBackdrop_PTF" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_PTF" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel_PTF">Website for Own Personal Portfolio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/bootstrap_5.jpg" width="100%" height="100%">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="popover" title="File Missing" data-content="No documentation yet, sorry." disabled>Document</button>
+            <button type="button" class="btn btn-success btn-sm" data-toggle="popover" title="Download Repository" data-content="https://github.com/al-Kahfi/Portfolio.git">Source Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Modal Augmented -->
+    <div class="modal fade" id="staticBackdrop_AUG" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_AUG" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel_AUG">Android Apps for Digital Marketing</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/c_sharp.jpg" width="100%" height="100%">
+          </div>
+          <div class="modal-footer">
+            <a href="https://drive.google.com/file/d/1U2z5WXREXwIsIQLeOGuKUw1aLjTk6jU_/view?usp=sharing" target="_blank" button type="button" class="btn btn-primary btn-sm">Document</a>
+            <button type="button" class="btn btn-success btn-sm" data-toggle="popover" title="Download Repository" data-content="In Progress">Source Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
     <footer class="container">
       <p>&copy; 2021 Muhammad Al Kahfi.</p>
     </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('[data-toggle="popover"]').popover({
+       })
+    </script>
   </body>
 </html>
