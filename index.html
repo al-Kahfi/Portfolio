@@ -8,6 +8,7 @@
     <title>My Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -49,18 +50,21 @@
 
     <!-- Modal Contact ME -->
     <div class="modal fade" id="staticBackdrop_CME" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel_CME" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
         <div class="modal-content">
           <div class="modal-body">
             <!--<img src="img/DAF_Score.jpg" width="100%" height="100%"> -->
-            <button type="button" class="btn btn-success btn-sm w-100">Whatapps</button>
-            <button type="button" class="btn btn-success btn-sm w-100">Line</button>
-            <button type="button" class="btn btn-primary btn-sm w-100">Telegram</button>
+            <div class="d-grid gap-2">
+              <!-- <button class="btn btn-primary" type="button">Email</button> -->
+              <a href="https://wa.me/6281317510750" class="btn btn-success" target="_blank"><i class="fa fa-2x fa-whatsapp">&nbsp;Whatsapp</i></a>
+              <a href="https://t.me/m_al_kahfi" class="btn btn-primary" target="_blank"><i class="fa fa-2x fa-send">&nbsp;Telegram</i></a>
+              <a href="mailto: al.muhammadkahfi@gmail.com" class="btn btn-danger" target="_blank"><i class="fa fa-2x fa-envelope-square">&nbsp;Email</i></a>
+              <a href="https://www.linkedin.com/in/muhammad-al-kahfi/" class="btn btn-primary" target="_blank"><i class="fa fa-2x fa-linkedin-square">&nbsp;Linkedin</i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <footer class="mt-auto text-white-50">
       <p>&copy; 2021 Muhammad Al Kahfi.</p>
     </footer>
